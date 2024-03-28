@@ -7,11 +7,14 @@ import Navbar from "@/components/global/navbar"
 import { TracingBeam } from "@/components/global/tracing-animation"
 import { Button } from "@/components/ui/button"
 import { clients, products } from "@/lib/constant"
+import { clerkClient, useAuth } from "@clerk/nextjs"
 import { CheckIcon } from "lucide-react"
 
 const HomePage = () => {
+  // const session = useAuth()
+  // console.log(session.getToken())
+  // const token = clerkClient.sessions.getToken()
   return (
-
     <main>
       <Navbar/>
       {/* HERO */}

@@ -7,6 +7,7 @@ import Templates from '../icons/cloud_download'
 import { Input } from '@/components/ui/input'
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import { UserButton, useAuth } from '@clerk/nextjs'
 // import { UserButton } from '@clerk/nextjs'
 // import { useBilling } from '@/providers/billing-provider'
 // import { onPaymentDetails } from '@/app/(main)/(pages)/billing/_actions/payment-connecetions'
@@ -67,7 +68,7 @@ const InfoBar = (props: Props) => {
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
-      {/* <UserButton /> */}
+      <UserButton/>
     </div>
   )
 }
