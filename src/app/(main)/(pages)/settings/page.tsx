@@ -1,6 +1,6 @@
 import ProfileForm from "@/components/forms/profile-form"
 import ProfilePicture from "./_components/profile-picture"
-import { currentUser, useAuth } from "@clerk/nextjs"
+import { auth, currentUser, useAuth } from "@clerk/nextjs"
 import { db } from "@/lib/db"
 
 interface Props {
@@ -11,6 +11,11 @@ const SettingsPage = async (props: Props) => {
 
   const authUser = await currentUser()
   if (!authUser) return null
+
+  // GET CLERK JWT TOKEN 
+  const { getToken } = auth()
+  const token = await getToken()
+
 
   const user = await db.user.findUnique({ where: { clerkId: authUser.id } })
   const removeProfileImage = async () => {
