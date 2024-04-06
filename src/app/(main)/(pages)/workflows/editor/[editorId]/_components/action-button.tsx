@@ -16,12 +16,7 @@ type Props = {
   setChannels?: (value: Option[]) => void
 }
 
-const ActionButton = ({
-  currentService,
-  nodeConnection,
-  channels,
-  setChannels,
-}: Props) => {
+const ActionButton = ({ currentService, nodeConnection, channels, setChannels }: Props) => {
   const pathname = usePathname()
 
   const onSendDiscordMessage = useCallback(async () => {
