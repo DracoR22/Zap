@@ -93,11 +93,7 @@ const ContentBasedOnTitle = ({
         <div className="flex flex-col gap-3 px-6 py-3 pb-20">
           <p>{title === 'Notion' ? 'Values to be stored' : 'Message'}</p>
 
-          <Input
-            type="text"
-            value={nodeConnectionType.content}
-            onChange={(event) => onContentChange(nodeConnection, title, event)}
-          />
+          <Input type="text" value={nodeConnectionType.content} onChange={(event) => onContentChange(nodeConnection, title, event)}/>
 
           {JSON.stringify(file) !== '{}' && title !== 'Google Drive' && (
             <Card className="w-full">
