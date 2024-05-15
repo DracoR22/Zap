@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div>
+  <img  src="/public/temp-banner.png">
+  <h1 align="center">ZAP</h1>
+</div>
 
-## Getting Started
+<p align="center">
+  Automate your work with ZAP
+</p>
 
-First, run the development server:
+### Key Features:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- 🛠️ Notion, Google Drive and Slack automation
+- 💻 Beautiful landing page included
+- 💳 Stripe integration
+- 🖥️ React flow for workflow editor
+- 🌟 Clean, modern UI on top of shadcn-ui
+- 🔑 Authentication using Clerk
+- ⌨️ 100% written in TypeScript
+
+
+### Prerequisites
+
+**Node version 14.x**
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/DracoR22/Zap
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Start the app
 
-## Learn More
+```shell
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Available commands
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Running commands with npm `pnpm [command]`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| command | description                              |
+| :------ | :--------------------------------------- |
+| `dev`   | Starts a development instance of the app |
+| `build` | Build project                            |
+| `lint`  | Check lint for project                   |
