@@ -1,5 +1,5 @@
 <div>
-  <img  src="/public/temp-banner.png">
+  <img  src="/public/zap.png">
   <h1 align="center">ZAP</h1>
 </div>
 
